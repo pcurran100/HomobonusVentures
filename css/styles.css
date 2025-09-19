@@ -196,6 +196,7 @@ p {
 .nav-link:hover,
 .nav-link.active {
     color: #D4AF37;
+    position: relative;
 }
 
 .nav-link.active::after {
@@ -206,6 +207,12 @@ p {
     width: 100%;
     height: 2px;
     background-color: #D4AF37;
+    border-radius: 1px;
+}
+
+.nav-link.active {
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .nav-toggle {

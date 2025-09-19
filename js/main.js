@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             currentSection = index;
             updateScrollIndicators();
+            updateNavigationHighlight();
         }
     }
     
@@ -44,6 +45,31 @@ document.addEventListener('DOMContentLoaded', function() {
                 indicator.classList.remove('active');
             }
         });
+    }
+    
+    // Update navigation highlighting
+    function updateNavigationHighlight() {
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+        });
+        
+        // Map sections to navigation links
+        const sectionMap = {
+            0: 'index.html',      // Hero section
+            1: 'about.html',      // Philosophy section  
+            2: 'portfolio.html',  // Mission section
+            3: 'team.html',       // Portfolio section
+            4: 'contact.html'     // CTA section
+        };
+        
+        const currentPage = sectionMap[currentSection];
+        if (currentPage) {
+            const activeLink = document.querySelector(`.nav-link[href="${currentPage}"]`);
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+        }
     }
     
     // Handle wheel events for paginated scrolling
@@ -116,6 +142,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add scroll indicators
     createScrollIndicators();
+    
+    // Initialize navigation highlighting
+    updateNavigationHighlight();
 });
 
 // Create scroll indicators (dots on the right side)
