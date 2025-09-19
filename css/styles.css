@@ -492,14 +492,16 @@ p {
 .portfolio-item {
     text-align: center;
     padding: 2rem;
-    background-color: #1C1C1C;
+    background-color: rgba(28, 28, 28, 0.9);
     border-radius: 12px;
     border: 1px solid #D4AF37;
     transition: transform 0.3s ease;
+    backdrop-filter: blur(5px);
 }
 
 .portfolio-item:hover {
     transform: translateY(-5px);
+    background-color: rgba(28, 28, 28, 0.95);
 }
 
 .portfolio-logo {
@@ -559,16 +561,17 @@ p {
 .cta-item {
     text-align: center;
     padding: 2rem;
-    background-color: #1C1C1C;
+    background-color: rgba(28, 28, 28, 0.9);
     border-radius: 12px;
     border: 1px solid #D4AF37;
     text-decoration: none;
     transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
 }
 
 .cta-item:hover {
     transform: translateY(-5px);
-    background-color: #8B0000;
+    background-color: rgba(139, 0, 0, 0.9);
 }
 
 .cta-item h3 {
@@ -608,7 +611,8 @@ section {
 }
 
 .hero {
-    background: linear-gradient(135deg, #8B0000 0%, #1C1C1C 100%);
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.8) 0%, rgba(28, 28, 28, 0.9) 100%), 
+                url('../imagery/catholic-7.webp') center/cover no-repeat;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -618,19 +622,22 @@ section {
 }
 
 .philosophy-section {
-    background-color: #660000;
+    background: linear-gradient(135deg, rgba(102, 0, 0, 0.9) 0%, rgba(102, 0, 0, 0.8) 100%), 
+                url('../imagery/catholic_aesthetic.jpeg') center/cover no-repeat;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
 }
 
 .mission-section {
-    background-color: #990000;
+    background: linear-gradient(135deg, rgba(153, 0, 0, 0.9) 0%, rgba(153, 0, 0, 0.8) 100%), 
+                url('../imagery/catholic_3.jpeg') center/cover no-repeat;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
 }
 
 .portfolio-preview {
-    background-color: #8B0000;
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.9) 0%, rgba(139, 0, 0, 0.8) 100%), 
+                url('../imagery/catholic_4.jpeg') center/cover no-repeat;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
 }
@@ -642,7 +649,8 @@ section {
 }
 
 .definition-section {
-    background-color: #660000;
+    background: linear-gradient(135deg, rgba(102, 0, 0, 0.9) 0%, rgba(102, 0, 0, 0.8) 100%), 
+                url('../imagery/catholic_aesthetic_2.jpeg') center/cover no-repeat;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
 }
@@ -659,6 +667,29 @@ section {
     justify-content: center;
     min-height: 100vh;
     box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+/* Text readability over background images */
+.section-title,
+.hero-title,
+.hero-subtitle,
+.philosophy-item h3,
+.philosophy-item p,
+.timeline-item h3,
+.timeline-item p,
+.portfolio-item h3,
+.portfolio-item p,
+.cta-title,
+.cta-item h3,
+.cta-item p,
+.definition-title,
+.definition-item h3,
+.definition-quote p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 3;
 }
 
 .definition-title {
