@@ -33,7 +33,7 @@
 }
 
 body {
-    font-family: 'Merriweather', 'Georgia', serif;
+    font-family: 'Crimson Text', 'Georgia', serif;
     line-height: 1.6;
     color: #1C1C1C;
     background-color: #F8F8FF;
@@ -48,33 +48,33 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cinzel', 'Times New Roman', serif;
-    font-weight: 600;
+    font-family: 'UnifrakturCook', 'Times New Roman', serif;
+    font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
     color: #D4AF37;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
     font-size: 3rem;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 h2 {
     font-size: 2.5rem;
-    letter-spacing: 0.8px;
+    letter-spacing: 1.5px;
 }
 
 h3 {
     font-size: 1.5rem;
-    letter-spacing: 0.6px;
+    letter-spacing: 1px;
 }
 
 p {
-    font-family: 'Merriweather', 'Georgia', serif;
+    font-family: 'Crimson Text', 'Georgia', serif;
     margin-bottom: 1rem;
     color: #1C1C1C;
     font-size: 1.1rem;
@@ -96,17 +96,17 @@ p {
 
 /* Buttons */
 .btn {
-    font-family: 'Cinzel', 'Times New Roman', serif;
+    font-family: 'UnifrakturCook', 'Times New Roman', serif;
     display: inline-block;
     padding: 12px 24px;
     border-radius: 8px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
     transition: all 0.3s ease;
     border: 2px solid transparent;
     cursor: pointer;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .btn-primary {
@@ -169,13 +169,13 @@ p {
 }
 
 .nav-logo a {
-    font-family: 'Cinzel', 'Times New Roman', serif;
+    font-family: 'UnifrakturCook', 'Times New Roman', serif;
     font-size: 1.5rem;
     font-weight: 700;
     color: #D4AF37;
     text-decoration: none;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .nav-menu {
@@ -184,10 +184,10 @@ p {
 }
 
 .nav-link {
-    font-family: 'Merriweather', 'Georgia', serif;
+    font-family: 'Crimson Text', 'Georgia', serif;
     color: #1C1C1C;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     transition: color 0.3s ease;
     position: relative;
     font-size: 1rem;
@@ -262,24 +262,24 @@ p {
 }
 
 .hero-title {
-    font-family: 'Cinzel', 'Times New Roman', serif;
+    font-family: 'UnifrakturCook', 'Times New Roman', serif;
     font-size: 3.5rem;
     font-weight: 700;
     color: #D4AF37;
     margin-bottom: 1.5rem;
     line-height: 1.1;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    letter-spacing: 3px;
 }
 
 .hero-subtitle {
-    font-family: 'Merriweather', 'Georgia', serif;
+    font-family: 'Crimson Text', 'Georgia', serif;
     font-size: 1.25rem;
     color: #F8F8FF;
     margin-bottom: 2rem;
     line-height: 1.6;
     font-size: 1.3rem;
+    font-weight: 400;
 }
 
 .hero-buttons {
@@ -1314,17 +1314,19 @@ section {
 }
 
 .form-group label {
-    font-family: 'Cinzel', serif;
+    font-family: 'UnifrakturCook', 'Times New Roman', serif;
     display: block;
-    color: #1C1C1C;
-    font-weight: 500;
+    color: #D4AF37;
+    font-weight: 700;
     margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
-    font-family: 'Merriweather', serif;
+    font-family: 'Crimson Text', 'Georgia', serif;
     width: 100%;
     padding: 12px;
     border: 2px solid #D4AF37;
