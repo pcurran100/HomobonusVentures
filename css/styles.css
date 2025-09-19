@@ -8,7 +8,7 @@
 :root {
     /* Primary Colors */
     --primary-bg: #F8F8FF;
-    --section-bg-dark: #003366;
+    --section-bg-dark: #660000;
     --section-bg-black: #1C1C1C;
     --accent-gold: #D4AF37;
     --crimson: #8B0000;
@@ -23,12 +23,12 @@
     
     /* Button Colors */
     --btn-primary: #8B0000;
-    --btn-secondary: #003366;
+    --btn-secondary: #660000;
     --btn-text-gold: #D4AF37;
     
     /* Border Colors */
     --border-gold: #D4AF37;
-    --border-blue: #003366;
+    --border-crimson: #660000;
     --border-purple: #4B0082;
 }
 
@@ -123,16 +123,16 @@ p {
 }
 
 .btn-secondary {
-    background-color: #003366;
+    background-color: #660000;
     color: #F8F8FF;
-    border-color: #003366;
+    border-color: #660000;
 }
 
 .btn-secondary:hover {
-    background-color: #003366;
+    background-color: #660000;
     color: #F8F8FF;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);
+    box-shadow: 0 4px 12px rgba(102, 0, 0, 0.3);
 }
 
 .btn-outline {
@@ -863,7 +863,8 @@ section {
 
 /* Portfolio Preview */
 .portfolio-preview {
-    background-color: #003366;
+    background-color: #990000;
+    padding: 80px 0;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
 }
@@ -929,7 +930,8 @@ section {
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(135deg, #1C1C1C 0%, #003366 100%);
+    background: linear-gradient(135deg, rgba(28, 28, 28, 0.9) 0%, rgba(139, 0, 0, 0.8) 100%), 
+                url('../imagery/Catholic_5.webp') center/cover no-repeat;
     color: #F8F8FF;
     text-align: center;
     position: relative;
