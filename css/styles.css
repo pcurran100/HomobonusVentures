@@ -575,10 +575,66 @@ p {
     color: #F8F8FF;
 }
 
-/* Definition Section */
+/* Paginated Scroll Effect */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Crimson Text', 'Georgia', serif;
+    line-height: 1.6;
+    color: #F8F8FF;
+    background-color: #1C1C1C;
+    font-size: 1.1rem;
+    overflow-x: hidden;
+}
+
+/* Full Height Sections */
+section {
+    min-height: 100vh;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero {
+    background: linear-gradient(135deg, #8B0000 0%, #1C1C1C 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.philosophy-section {
+    background-color: #660000;
+    border-top: 2px solid #D4AF37;
+    border-bottom: 2px solid #D4AF37;
+}
+
+.mission-section {
+    background-color: #990000;
+    border-top: 2px solid #D4AF37;
+    border-bottom: 2px solid #D4AF37;
+}
+
+.portfolio-preview {
+    background-color: #8B0000;
+    border-top: 2px solid #D4AF37;
+    border-bottom: 2px solid #D4AF37;
+}
+
+.cta-section {
+    background: linear-gradient(135deg, #1C1C1C 0%, #8B0000 100%);
+    border-top: 2px solid #D4AF37;
+    border-bottom: 2px solid #D4AF37;
+}
+
 .definition-section {
     background-color: #660000;
-    padding: 80px 0;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
 }
@@ -624,6 +680,38 @@ p {
     color: #F8F8FF;
     margin: 0.5rem 0;
     font-style: italic;
+}
+
+/* Scroll Indicators */
+.scroll-indicators {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.scroll-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(212, 175, 55, 0.3);
+    border: 2px solid #D4AF37;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.scroll-indicator:hover {
+    background-color: rgba(212, 175, 55, 0.6);
+    transform: scale(1.2);
+}
+
+.scroll-indicator.active {
+    background-color: #D4AF37;
+    transform: scale(1.3);
 }
 
 .section-header {
@@ -1786,5 +1874,21 @@ p {
     .hero-buttons {
         flex-direction: column;
         gap: 1rem;
+    }
+    
+    /* Hide scroll indicators on mobile */
+    .scroll-indicators {
+        display: none;
+    }
+    
+    /* Allow normal scrolling on mobile */
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+    section {
+        min-height: 100vh;
+        padding: 40px 0;
     }
 }
