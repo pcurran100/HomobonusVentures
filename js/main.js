@@ -30,7 +30,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 block: 'start'
             });
             currentSection = index;
+            updateScrollIndicators();
         }
+    }
+    
+    // Update scroll indicators
+    function updateScrollIndicators() {
+        const indicators = document.querySelectorAll('.scroll-indicator');
+        indicators.forEach((indicator, index) => {
+            if (index === currentSection) {
+                indicator.classList.add('active');
+            } else {
+                indicator.classList.remove('active');
+            }
+        });
     }
     
     // Handle wheel events for paginated scrolling

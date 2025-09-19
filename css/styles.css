@@ -591,17 +591,18 @@ body {
 
 /* Full Height Sections */
 section {
-    min-height: 100vh;
+    height: 100vh;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 }
 
 .hero {
     background: linear-gradient(135deg, #8B0000 0%, #1C1C1C 100%);
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -637,6 +638,20 @@ section {
     background-color: #660000;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
+}
+
+/* Section Content Containers */
+.section-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .definition-title {
