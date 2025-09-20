@@ -149,7 +149,7 @@ p {
 
 /* Navigation */
 .navbar {
-    background: linear-gradient(180deg, rgba(139, 0, 0, 0.95) 0%, rgba(139, 0, 0, 0.7) 50%, rgba(139, 0, 0, 0.3) 80%, transparent 100%);
+    background: linear-gradient(180deg, rgba(139, 0, 0, 0.95) 0%, rgba(139, 0, 0, 0.7) 30%, rgba(139, 0, 0, 0.4) 60%, rgba(139, 0, 0, 0.1) 80%, transparent 100%);
     backdrop-filter: blur(10px);
     border-bottom: none;
     position: fixed;
@@ -160,7 +160,7 @@ p {
 }
 
 .navbar.scrolled {
-    background: linear-gradient(180deg, rgba(139, 0, 0, 0.98) 0%, rgba(139, 0, 0, 0.8) 50%, rgba(139, 0, 0, 0.4) 80%, transparent 100%);
+    background: linear-gradient(180deg, rgba(139, 0, 0, 0.98) 0%, rgba(139, 0, 0, 0.8) 30%, rgba(139, 0, 0, 0.5) 60%, rgba(139, 0, 0, 0.2) 80%, transparent 100%);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -2018,7 +2018,7 @@ section {
     
     /* Shadow Header Responsive */
     .navbar {
-        background: linear-gradient(180deg, rgba(139, 0, 0, 0.98) 0%, rgba(139, 0, 0, 0.8) 50%, rgba(139, 0, 0, 0.4) 80%, transparent 100%);
+        background: linear-gradient(180deg, rgba(139, 0, 0, 0.98) 0%, rgba(139, 0, 0, 0.8) 30%, rgba(139, 0, 0, 0.5) 60%, rgba(139, 0, 0, 0.2) 80%, transparent 100%);
     }
     
     .nav-container {
