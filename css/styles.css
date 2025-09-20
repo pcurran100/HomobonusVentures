@@ -149,23 +149,30 @@ p {
 
 /* Navigation */
 .navbar {
-    background-color: #8B0000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    border-bottom: 2px solid #D4AF37;
+    background: linear-gradient(180deg, rgba(28, 28, 28, 0.95) 0%, rgba(28, 28, 28, 0.7) 50%, rgba(28, 28, 28, 0.3) 80%, transparent 100%);
+    backdrop-filter: blur(10px);
+    border-bottom: none;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: linear-gradient(180deg, rgba(28, 28, 28, 0.98) 0%, rgba(28, 28, 28, 0.8) 50%, rgba(28, 28, 28, 0.4) 80%, transparent 100%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 15px 20px 25px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: auto;
+    min-height: 70px;
 }
 
 .nav-logo a {
@@ -188,29 +195,23 @@ p {
     color: #F8F8FF;
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
     position: relative;
     font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: rgba(212, 175, 55, 0.1);
 }
 
-.nav-link:hover,
+.nav-link:hover {
+    color: #D4AF37;
+    background-color: rgba(212, 175, 55, 0.2);
+    transform: translateY(-1px);
+}
+
 .nav-link.active {
     color: #D4AF37;
-    position: relative;
-}
-
-.nav-link.active::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #D4AF37;
-    border-radius: 1px;
-}
-
-.nav-link.active {
+    background-color: rgba(212, 175, 55, 0.3);
     font-weight: 700;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
@@ -1896,55 +1897,17 @@ section {
         width: 200px;
     }
     
-    /* Additional Responsive Styles for New Structure */
-    .hero-title {
-        font-size: 2.5rem;
+    /* Shadow Header Responsive */
+    .navbar {
+        background: linear-gradient(180deg, rgba(28, 28, 28, 0.98) 0%, rgba(28, 28, 28, 0.8) 50%, rgba(28, 28, 28, 0.4) 80%, transparent 100%);
     }
     
-    .text-item {
-        font-size: 2rem;
+    .nav-container {
+        padding: 10px 20px 20px 20px;
+        min-height: 60px;
     }
     
-    .mission-timeline {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+    .nav-link {
+        padding: 6px 12px;
+        font-size: 0.9rem;
     }
-    
-    .philosophy-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .portfolio-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-    
-    .cta-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .definition-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .hero-buttons {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    /* Hide scroll indicators on mobile */
-    .scroll-indicators {
-        display: none;
-    }
-    
-    /* Allow normal scrolling on mobile */
-    body {
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
-    
-    section {
-        min-height: 100vh;
-        padding: 40px 0;
-    }
-}
