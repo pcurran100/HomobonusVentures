@@ -7,9 +7,9 @@
 
 :root {
     /* Primary Colors */
-    --primary-bg: #F8F8FF;
-    --section-bg-dark: #660000;
-    --section-bg-black: #1C1C1C;
+    --primary-bg: #8B0000;
+    --section-bg-dark: #8B0000;
+    --section-bg-black: #8B0000;
     --accent-gold: #D4AF37;
     --crimson: #8B0000;
     --royal-purple: #4B0082;
@@ -23,12 +23,12 @@
     
     /* Button Colors */
     --btn-primary: #8B0000;
-    --btn-secondary: #660000;
+    --btn-secondary: #8B0000;
     --btn-text-gold: #D4AF37;
     
     /* Border Colors */
     --border-gold: #D4AF37;
-    --border-crimson: #660000;
+    --border-crimson: #8B0000;
     --border-purple: #4B0082;
 }
 
@@ -36,7 +36,7 @@ body {
     font-family: 'Crimson Text', 'Georgia', serif;
     line-height: 1.6;
     color: #F8F8FF;
-    background-color: #1C1C1C;
+    background-color: #8B0000;
     font-size: 1.1rem;
 }
 
@@ -123,13 +123,13 @@ p {
 }
 
 .btn-secondary {
-    background-color: #660000;
+    background-color: #8B0000;
     color: #F8F8FF;
     border-color: #660000;
 }
 
 .btn-secondary:hover {
-    background-color: #660000;
+    background-color: #8B0000;
     color: #F8F8FF;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(102, 0, 0, 0.3);
@@ -149,7 +149,7 @@ p {
 
 /* Navigation */
 .navbar {
-    background: linear-gradient(180deg, rgba(28, 28, 28, 0.95) 0%, rgba(28, 28, 28, 0.7) 50%, rgba(28, 28, 28, 0.3) 80%, transparent 100%);
+    background: linear-gradient(180deg, rgba(139, 0, 0, 0.95) 0%, rgba(139, 0, 0, 0.7) 50%, rgba(139, 0, 0, 0.3) 80%, transparent 100%);
     backdrop-filter: blur(10px);
     border-bottom: none;
     position: fixed;
@@ -160,7 +160,7 @@ p {
 }
 
 .navbar.scrolled {
-    background: linear-gradient(180deg, rgba(28, 28, 28, 0.98) 0%, rgba(28, 28, 28, 0.8) 50%, rgba(28, 28, 28, 0.4) 80%, transparent 100%);
+    background: linear-gradient(180deg, rgba(139, 0, 0, 0.98) 0%, rgba(139, 0, 0, 0.8) 50%, rgba(139, 0, 0, 0.4) 80%, transparent 100%);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -233,7 +233,7 @@ p {
 /* Hero Section */
 .hero {
     padding: 120px 0 80px;
-    background: linear-gradient(135deg, #8B0000 0%, #1C1C1C 100%);
+    background: linear-gradient(135deg, #8B0000 0%, #8B0000 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -409,7 +409,7 @@ p {
 
 /* Philosophy Section */
 .philosophy-section {
-    background-color: #660000;
+    background-color: #8B0000;
     padding: 80px 0;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
@@ -477,7 +477,7 @@ p {
 
 /* Portfolio Preview */
 .portfolio-preview {
-    background-color: #990000;
+    background-color: #8B0000;
     padding: 80px 0;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
@@ -538,7 +538,7 @@ p {
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(135deg, #1C1C1C 0%, #8B0000 100%);
+    background: linear-gradient(135deg, #8B0000 0%, #8B0000 100%);
     padding: 80px 0;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
@@ -598,7 +598,7 @@ body {
     font-family: 'Crimson Text', 'Georgia', serif;
     line-height: 1.6;
     color: #F8F8FF;
-    background-color: #1C1C1C;
+    background-color: #8B0000;
     font-size: 1.1rem;
     overflow-x: hidden;
 }
@@ -615,7 +615,7 @@ section {
 }
 
 .hero {
-    background: linear-gradient(135deg, rgba(139, 0, 0, 0.8) 0%, rgba(28, 28, 28, 0.9) 100%), 
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.8) 0%, rgba(139, 0, 0, 0.9) 100%), 
                 url('../imagery/catholic-7.webp') center/cover no-repeat;
     height: 100vh;
     display: flex;
@@ -626,14 +626,14 @@ section {
 }
 
 .philosophy-section {
-    background: linear-gradient(135deg, rgba(102, 0, 0, 0.9) 0%, rgba(102, 0, 0, 0.8) 100%), 
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.9) 0%, rgba(139, 0, 0, 0.8) 100%), 
                 url('../imagery/Catholic_5.webp') center/cover no-repeat;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
 }
 
 .mission-section {
-    background: linear-gradient(135deg, rgba(153, 0, 0, 0.9) 0%, rgba(153, 0, 0, 0.8) 100%), 
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.9) 0%, rgba(139, 0, 0, 0.8) 100%), 
                 url('../imagery/catholic_4.jpeg') center/cover no-repeat;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
@@ -647,14 +647,14 @@ section {
 }
 
 .cta-section {
-    background: linear-gradient(135deg, rgba(28, 28, 28, 0.9) 0%, rgba(139, 0, 0, 0.8) 100%), 
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.9) 0%, rgba(139, 0, 0, 0.8) 100%), 
                 url('../imagery/catholic_3.jpeg') center/cover no-repeat;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
 }
 
 .definition-section {
-    background: linear-gradient(135deg, rgba(102, 0, 0, 0.9) 0%, rgba(102, 0, 0, 0.8) 100%), 
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.9) 0%, rgba(139, 0, 0, 0.8) 100%), 
                 url('../imagery/Saint-Homobonus-Tucingo-02.jpg') center/cover no-repeat;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
@@ -977,7 +977,7 @@ section {
 
 /* Portfolio Preview */
 .portfolio-preview {
-    background-color: #990000;
+    background-color: #8B0000;
     padding: 80px 0;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
@@ -1044,7 +1044,7 @@ section {
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(135deg, rgba(28, 28, 28, 0.9) 0%, rgba(139, 0, 0, 0.8) 100%), 
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.9) 0%, rgba(139, 0, 0, 0.8) 100%), 
                 url('../imagery/catholic_3.jpeg') center/cover no-repeat;
     color: #F8F8FF;
     text-align: center;
@@ -1099,7 +1099,7 @@ section {
 
 /* Footer */
 .footer {
-    background-color: #1C1C1C;
+    background-color: #8B0000;
     color: #F8F8FF;
     padding: 3rem 0 1rem;
     border-top: 2px solid #D4AF37;
@@ -1239,7 +1239,7 @@ section {
 /* Page Header */
 .page-header {
     padding: 120px 0 80px;
-    background: linear-gradient(135deg, var(--section-bg-dark) 0%, var(--section-bg-black) 100%);
+    background: linear-gradient(135deg, #8B0000 0%, #8B0000 100%);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -1281,7 +1281,7 @@ section {
 /* Mission Section */
 .mission-section {
     padding: 80px 0;
-    background-color: #660000;
+    background-color: #8B0000;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
 }
@@ -1351,7 +1351,7 @@ section {
 
 /* Values Section */
 .values-section {
-    background-color: #990000;
+    background-color: #8B0000;
     padding: 80px 0;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
@@ -1367,7 +1367,7 @@ section {
 .value-card {
     text-align: center;
     padding: 2rem;
-    background-color: #1C1C1C;
+    background-color: #8B0000;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     border: 1px solid #D4AF37;
@@ -1823,7 +1823,7 @@ section {
 
 /* Contact Form */
 .contact-form-container {
-    background-color: #1C1C1C;
+    background-color: #8B0000;
     padding: 2rem;
     border-radius: 12px;
     border: 1px solid #D4AF37;
@@ -1859,7 +1859,7 @@ section {
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
-    background-color: #1C1C1C;
+    background-color: #8B0000;
     color: #F8F8FF;
 }
 
@@ -2018,7 +2018,7 @@ section {
     
     /* Shadow Header Responsive */
     .navbar {
-        background: linear-gradient(180deg, rgba(28, 28, 28, 0.98) 0%, rgba(28, 28, 28, 0.8) 50%, rgba(28, 28, 28, 0.4) 80%, transparent 100%);
+        background: linear-gradient(180deg, rgba(139, 0, 0, 0.98) 0%, rgba(139, 0, 0, 0.8) 50%, rgba(139, 0, 0, 0.4) 80%, transparent 100%);
     }
     
     .nav-container {
