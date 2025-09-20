@@ -740,10 +740,10 @@ section {
 /* GIF Overlay */
 .gif-overlay {
     position: fixed;
-    left: -40%;
+    left: -20%;
     top: 0%;
-    width: 75%;
-    height: 120%;
+    width: 60%;
+    height: 100%;
     z-index: 1;
     pointer-events: none;
     opacity: 1;
@@ -1926,9 +1926,9 @@ section {
     
     /* GIF Overlay Responsive */
     .gif-overlay {
-        left: -30%;
+        left: -15%;
         top: 0%;
-        width: 70%;
+        width: 55%;
         height: 90%;
         opacity: 1;
     }
