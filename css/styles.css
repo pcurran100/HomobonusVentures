@@ -1926,9 +1926,9 @@ section {
     
     /* GIF Overlay Responsive */
     .gif-overlay {
-        left: -15%;
+        left: -20%;
         top: 0%;
-        width: 55%;
-        height: 90%;
+        width: 60%;
+        height: 100%;
         opacity: 1;
     }
