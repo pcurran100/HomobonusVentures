@@ -555,8 +555,11 @@ p {
 
 .cta-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .cta-item {
@@ -624,7 +627,7 @@ section {
 
 .philosophy-section {
     background: linear-gradient(135deg, rgba(102, 0, 0, 0.9) 0%, rgba(102, 0, 0, 0.8) 100%), 
-                url('../imagery/catholic_3.jpeg') center/cover no-repeat;
+                url('../imagery/Catholic_5.webp') center/cover no-repeat;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
 }
@@ -645,14 +648,14 @@ section {
 
 .cta-section {
     background: linear-gradient(135deg, rgba(28, 28, 28, 0.9) 0%, rgba(139, 0, 0, 0.8) 100%), 
-                url('../imagery/Catholic_5.webp') center/cover no-repeat;
+                url('../imagery/catholic_3.jpeg') center/cover no-repeat;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
 }
 
 .definition-section {
     background: linear-gradient(135deg, rgba(102, 0, 0, 0.9) 0%, rgba(102, 0, 0, 0.8) 100%), 
-                url('../imagery/catholic-8.jpg') center/cover no-repeat;
+                url('../imagery/Saint-Homobonus-Tucingo-02.jpg') center/cover no-repeat;
     border-top: 2px solid #D4AF37;
     border-bottom: 2px solid #D4AF37;
 }
@@ -737,6 +740,93 @@ section {
     font-style: italic;
 }
 
+/* Saint Homobonus Section Styles */
+.saint-description {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.saint-description h3 {
+    font-family: 'UnifrakturCook', 'Times New Roman', serif;
+    font-size: 1.8rem;
+    color: #D4AF37;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.saint-description > p {
+    font-family: 'Crimson Text', 'Georgia', serif;
+    font-size: 1.2rem;
+    color: #F8F8FF;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.saint-qualities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.quality-item {
+    background-color: rgba(28, 28, 28, 0.7);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid rgba(212, 175, 55, 0.3);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.quality-item:hover {
+    border-color: #D4AF37;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.quality-item h4 {
+    font-family: 'UnifrakturCook', 'Times New Roman', serif;
+    font-size: 1.4rem;
+    color: #D4AF37;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.quality-item p {
+    font-family: 'Crimson Text', 'Georgia', serif;
+    font-size: 1rem;
+    color: #F8F8FF;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.saint-quote {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: rgba(28, 28, 28, 0.6);
+    border-radius: 12px;
+    border-left: 4px solid #D4AF37;
+    backdrop-filter: blur(5px);
+}
+
+.saint-quote p {
+    font-family: 'Crimson Text', 'Georgia', serif;
+    font-size: 1.1rem;
+    color: #F8F8FF;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.saint-quote p:last-child {
+    font-style: italic;
+    color: #D4AF37;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
 /* GIF Overlay */
 .gif-overlay {
     position: fixed;
@@ -759,6 +849,17 @@ section {
 
 .gif-overlay:hover {
     opacity: 1;
+}
+
+.scroll-indicators {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .scroll-indicator {
@@ -944,7 +1045,7 @@ section {
 /* CTA Section */
 .cta-section {
     background: linear-gradient(135deg, rgba(28, 28, 28, 0.9) 0%, rgba(139, 0, 0, 0.8) 100%), 
-                url('../imagery/Catholic_5.webp') center/cover no-repeat;
+                url('../imagery/catholic_3.jpeg') center/cover no-repeat;
     color: #F8F8FF;
     text-align: center;
     position: relative;
@@ -1116,6 +1217,12 @@ section {
     .focus-grid,
     .portfolio-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .cta-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        max-width: 400px;
     }
 
     .hero-graphic {
@@ -1932,3 +2039,4 @@ section {
         height: 100%;
         opacity: 1;
     }
+}
